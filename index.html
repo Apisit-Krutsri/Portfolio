@@ -14,154 +14,401 @@
 
   <body>
     <!-- Navigation bar -->
-    <nav id="navbar">
-      <div class="navbar-brand">
-        <a href="#navbar"></a><span>Portfo</span>lio
+    <nav
+      id="navbar"
+      class="d-flex justify-content-around fixed-top p-1 bg-white shadow fw-bold"
+    >
+      <div class="navbar-brand h-100">
+        <a href="#navbar" class="text-decoration-none h-100">
+          <h3 class="text-black fw-bold" style="background-color: aqua">
+            <span>Portfo</span>lio
+          </h3>
+        </a>
       </div>
 
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item flex-fill nav-item">
-          <a class="nav-link" href="#introduction">Introduction</a>
+        <li class="list-group-item nav-item border border-0">
+          <a class="nav-link text-center" href="#introduction">Introduction</a>
         </li>
-        <li class="list-group-item flex-fill nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
+        <li class="list-group-item nav-item border border-0">
+          <a class="nav-link text-center" href="#experience">Experience</a>
         </li>
-        <li class="list-group-item flex-fill nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+        <li class="list-group-item nav-item border border-0">
+          <a class="nav-link text-center" href="#skills">Skills</a>
         </li>
-        <li class="list-group-item flex-fill nav-item">
-          <a class="nav-link" href="#project">Projects</a>
+        <li class="list-group-item nav-item border border-0">
+          <a class="nav-link text-center" href="#project">Projects</a>
         </li>
-        <li class="list-group-item flex-fill nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+        <li class="list-group-item nav-item border border-0">
+          <a class="nav-link text-center" href="#contact">Contact</a>
         </li>
       </ul>
 
-      <button class="btn">Download CV</button>
+      <a href="./file/CV.pdf" download="Apisit-Krutsri_CV.pdf"
+        ><button
+          class="btn border border-warning bg-danger bg-opacity-25 h-100 fw-bold"
+        >
+          Download CV
+        </button>
+      </a>
     </nav>
 
     <!-- Introduction section -->
-    <section id="introduction">
-      <div>
-        <p class="fs-5">Hello, my name is</p>
-        <p class="fs-1">Apisit Krutsri</p>
+    <section id="introduction" class="vh-100 bg-warning bg-opacity-10">
+      <div class="px-5 gap-4 pt-5">
+        <div class="d-inline-flex flex-nowrap h-100 pt-5">
+          <div class="d-flex align-items-center w-75 m-5">
+            <div>
+              <div>
+                <p class="fs-4 fw-bold">Hello, my name is</p>
+                <p class="fs-1 fw-bold">Apisit Krutsri</p>
+              </div>
+              <div>
+                <header class="fs-4 fw-bold">About me</header>
+                <p class="fw-bold m-1">
+                  I am a career switcher and a learner from Junior Software
+                  Developer bootcamp cohort 3 by Generation Thailand, who is
+                  looking for a new challenge as a backend developer with DevOps
+                  culture and a DevOps position. I am willing to be a part of
+                  the team so that I could learn new things to sharpen my skills
+                  to make the right and impactful answer to achieving the goal
+                  of the organization.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./img/Profile_pic.jpeg"
+            alt="Profile picture"
+            class="rounded-5 w-25 m-4"
+          />
+        </div>
       </div>
-      <div>
-        <header class="fs-4">About me</header>
-        <p>
-          I am a career switcher and a learner from Junior Software Developer
-          bootcamp cohort 3 by Generation Thailand, who is looking for a new
-          challenge as a backend developer with DevOps culture and a DevOps
-          position. I am willing to be a part of the team so that I could learn
-          new things to sharpen my skills to make the right and impactful answer
-          to achieving the goal of the organization.
-        </p>
-      </div>
-      <div>
-        <header class="fs-4">Education</header>
-        <div class="card text-bg-light mb-3" style="width: 30rem">
-          <div class="card-body">
-            <h5 class="card-title">Bachelor of Electrical Engineering</h5>
-            <h6 class="card-subtitle mb-2">Naresuan University</h6>
-            <h6 class="card-subtitle mb-2 text-muted">
-              (June 2012 - July 2017)
-            </h6>
+
+      <div class="px-5">
+        <header class="fs-3 fw-bold px-5 gap-4">Education</header>
+        <div class="px-5 mt-3">
+          <div class="card mb-3 shadow-sm" style="width: 30rem">
+            <div class="card-body bg-primary bg-opacity-10">
+              <h5 class="card-title">Bachelor of Electrical Engineering</h5>
+              <h6 class="card-subtitle mb-2">Naresuan University</h6>
+              <h6 class="card-subtitle mb-2 text-muted">
+                (June 2012 - July 2017)
+              </h6>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experienc section -->
-    <section id="experience">
-      <header class="fs-4">Experience</header>
+    <section id="experience" class="vh-100 pt-5 bg-danger bg-opacity-10">
+      <div class="px-5">
+        <header class="fs-3 fw-bold py-4 px-5">Experience</header>
 
-      <div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">
-              Junior software developer Bootcamp Cohort 3
-            </h5>
-            <h6 class="card-subtitle mb-2">Generation Thailand program</h6>
-            <h6 class="card-subtitle mb-2 text-muted">
-              (September 2022 - December 2022)
-            </h6>
-            <ul class="card-text">
-              <li>
-                Learned technical skills in HTML5, CSS, JavaScript, React,
-                Express, Node.js and MongoDB.
-              </li>
-              <li>
-                Learned behavioral skills and mindsets to be a successful
-                software developer.
-              </li>
-              <li>
-                The final project was a web application exercise tracker with
-                MERN stack.
-              </li>
-            </ul>
+        <div class="d-flex flex-column row-gap-3 px-5">
+          <div class="card mx-5 shadow-sm">
+            <div class="card-body bg-warning bg-opacity-10">
+              <h5 class="card-title fw-bold">
+                Junior software developer Bootcamp Cohort 3
+              </h5>
+              <h6 class="card-subtitle mb-2">Generation Thailand program</h6>
+              <h6 class="card-subtitle mb-2 text-muted">
+                (September 2022 - December 2022)
+              </h6>
+              <ul class="card-text">
+                <li>
+                  Learned technical skills in HTML5, CSS, JavaScript, React,
+                  Express, Node.js and MongoDB.
+                </li>
+                <li>
+                  Learned behavioral skills and mindsets to be a successful
+                  software developer.
+                </li>
+                <li>
+                  The final project was a web application exercise tracker with
+                  MERN stack.
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">IT Support Technician</h5>
-            <h6 class="card-subtitle mb-2">
-              Creative Economy Agency (Public Organization) · Contract
-            </h6>
-            <h6 class="card-subtitle mb-2 text-muted">
-              (July 2020 - July 2022)
-            </h6>
-            <ul class="card-text">
-              <li>
-                Advised and resolved tickets to succeed the need of users.
-              </li>
-              <li>
-                Provisioned Linux and Windows server virtual machines on VMware
-                ESXi as supervisor’s requirement.
-              </li>
-              li
-            </ul>
+          <div class="card mx-5 shadow-sm">
+            <div class="card-body bg-warning bg-opacity-10">
+              <h5 class="card-title fw-bold">IT Support Technician</h5>
+              <h6 class="card-subtitle mb-2">
+                Creative Economy Agency (Public Organization) · Contract
+              </h6>
+              <h6 class="card-subtitle mb-2 text-muted">
+                (July 2020 - July 2022)
+              </h6>
+              <ul class="card-text">
+                <li>
+                  Advised and resolved tickets to succeed the need of users.
+                </li>
+                <li>
+                  Provisioned Linux and Windows server virtual machines on
+                  VMware ESXi as supervisor’s requirement.
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Network Engineer</h5>
-            <h6 class="card-subtitle mb-2">
-              V Outlook Solutions Co., Ltd · Full-time
-            </h6>
-            <h6 class="card-subtitle mb-2 text-muted">
-              (May 2018 - August 2019)
-            </h6>
-            <ul class="card-text">
-              <li>
-                Designed and implemented networking solutions to succeed in
-                customer’s requirements
-              </li>
-              <li>
-                Advised and resolved the customer’s tickets to eliminate
-                difficulty away from the customer
-              </li>
-              li
-            </ul>
+          <div class="card mx-5 shadow-sm">
+            <div class="card-body bg-warning bg-opacity-10">
+              <h5 class="card-title fw-bold">Network Engineer</h5>
+              <h6 class="card-subtitle mb-2">
+                V Outlook Solutions Co., Ltd · Full-time
+              </h6>
+              <h6 class="card-subtitle mb-2 text-muted">
+                (May 2018 - August 2019)
+              </h6>
+              <ul class="card-text">
+                <li>
+                  Designed and implemented networking solutions to succeed in
+                  customer’s requirements
+                </li>
+                <li>
+                  Advised and resolved the customer’s tickets to eliminate
+                  difficulty away from the customer
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Skills section -->
-    <section id="skills">
-      <header class="fs-4">Skills</header>
+    <section id="skills" class="vh-100 pt-5 bg-primary bg-opacity-10">
+      <div class="h-100 px-5 d-flex align-items-center justify-content-center">
+        <div class="px-5">
+          <header class="fs-3 fw-bold py-4">Skills</header>
+          <div
+            class="d-flex flex-wrap justify-content-center px-5 column-gap-4"
+          >
+            <div class="text-center">
+              <!-- style="display: table-cell; height: 128px; width: 128px" -->
+              <a
+                class="align-middle"
+                title="Jason Long, CC BY 3.0
+              &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia
+              Commons"
+                href="https://commons.wikimedia.org/wiki/File:Git-logo.svg"
+                ><img
+                  width="128"
+                  alt="Git-logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/128px-Git-logo.svg.png"
+              /></a>
+              <h5>Git</h5>
+            </div>
+
+            <div class="text-center">
+              <a
+                class="align-middle"
+                title="Chris Williams, Public domain, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg"
+                ><img
+                  width="128"
+                  alt="Unofficial JavaScript logo 2"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/128px-Unofficial_JavaScript_logo_2.svg.png"
+              /></a>
+              <h5>JavaScript</h5>
+            </div>
+
+            <div class="text-center">
+              <a
+                class="align-middle"
+                title="Facebook, Public domain, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:React-icon.svg"
+                ><img
+                  width="128"
+                  alt="React-icon"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/128px-React-icon.svg.png"
+              /></a>
+              <h5>React</h5>
+            </div>
+
+            <div class="text-center">
+              <a
+                class="align-middle"
+                title="node.js authors, Public domain, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:Node.js_logo.svg"
+                ><img
+                  width="128"
+                  alt="Node.js logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/128px-Node.js_logo.svg.png"
+              /></a>
+              <h5>Node.js</h5>
+            </div>
+
+            <div class="text-center">
+              <a
+                class="align-middle"
+                title="MongoDB, Inc., Attribution, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:MongoDB_Logo.svg"
+                ><img
+                  width="128"
+                  alt="MongoDB Logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/128px-MongoDB_Logo.svg.png"
+              /></a>
+              <h5>MongoDB</h5>
+            </div>
+
+            <div class="text-center">
+              <a
+                class="align-middle"
+                title="alaa kaddour, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:Sql_data_base_with_logo.png"
+                ><img
+                  width="128"
+                  alt="Sql data base with logo"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/128px-Sql_data_base_with_logo.png"
+              /></a>
+              <h5>SQL</h5>
+            </div>
+
+            <div class="text-center">
+              <a
+                class="align-middle"
+                title="W3C, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg"
+                ><img
+                  width="128"
+                  alt="HTML5 logo and wordmark"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/128px-HTML5_logo_and_wordmark.svg.png"
+              /></a>
+              <h5>HTML5</h5>
+            </div>
+
+            <div class="text-center">
+              <a
+                class="align-middle"
+                title="Rudloff, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg"
+                ><img
+                  width="99"
+                  height="128"
+                  alt="CSS3 logo and wordmark"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/128px-CSS3_logo_and_wordmark.svg.png"
+              /></a>
+              <h5>CSS3</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects section -->
-    <section id="project">
-      <header class="fs-4">Projects</header>
+    <section id="project" class="vh-100 pt-5 bg-success bg-opacity-10">
+      <div class="h-100 px-5">
+        <header class="fs-3 px-5 pt-4 pb-2 fw-bold">Projects</header>
+        <div
+          class="px-5 d-flex align-items-center justify-content-center gap-5"
+        >
+          <div class="card shadow-sm" style="width: 20rem">
+            <img
+              src="./img/foot-feet-for-fire_landing.png"
+              class="card-img-top"
+              alt="foot-feet-for-fire"
+            />
+            <div class="card-body px-2 py-1">
+              <h5 class="card-title fw-bold m-1">foot-feet-for-fire</h5>
+              <p class="card-text m-1">Web application for exercise tracker</p>
+              <div class="text-end m-1">
+                <a
+                  href="https://footfeetforfire.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="black"
+                    class="bi bi-arrow-up-right-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"
+                    /></svg
+                ></a>
+                <a
+                  href="https://github.com/Apisit-Krutsri/foot-feet-for-fire"
+                  href="https://github.com/Apisit-Krutsri/foot-feet-for-fire-backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    width="32px"
+                    height="32px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                    alt="Frontend GitHub"
+                /></a>
+                <a
+                  href="https://github.com/Apisit-Krutsri/foot-feet-for-fire-backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    width="32px"
+                    height="32px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                    alt="Backtend GitHub"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact section -->
     <footer id="contact">
-      <header class="fs-4">Contact</header>
+      <div class="px-5 pb-2">
+        <header class="fs-3 fw-bold px-5 pt-4 pb-3">Contact</header>
+        <div class="px-5">
+          <p class="m-0 p-1">
+            <span class="fw-bold">Phone: </span>(+66) 834117377
+          </p>
+
+          <p class="m-0 p-1">
+            <span class="fw-bold">Email: </span>
+            <a
+              href="mailto:k.apisit@outlook.com"
+              class="text-decoration-none text-black"
+              rel="noopener noreferrer"
+            >
+              k.apisit@outlook.com
+            </a>
+          </p>
+
+          <p class="m-0 p-1">
+            <span class="fw-bold">GitHub: </span>
+            <a
+              href="https://github.com/Apisit-Krutsri"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-black"
+            >
+              https://github.com/Apisit-Krutsri
+            </a>
+          </p>
+
+          <p class="m-0 p-1">
+            <span class="fw-bold">Linkedin: </span>
+            <a
+              href="https://www.linkedin.com/in/apisit-krutsri"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-black"
+            >
+              www.linkedin.com/in/apisit-krutsri
+            </a>
+          </p>
+          <p class="m-0 p-1">
+            <span class="fw-bold">Address: </span>Khlong San district, Bangkok,
+            Thailand.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

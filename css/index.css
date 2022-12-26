@@ -12,3 +12,9 @@
   margin: 0;
   font-family: "Roboto Mono", monospace;
 }
+
+#skills a {
+  display: table-cell;
+  height: 128px;
+  width: 128px;
+}
